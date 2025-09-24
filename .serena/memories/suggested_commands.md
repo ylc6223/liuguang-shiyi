@@ -1,0 +1,21 @@
+# 常用命令（pnpm + Turbo）
+
+- 全局（根目录执行）：
+  - 开发并行启动：`pnpm dev`
+  - 全量构建：`pnpm build`
+  - 全量测试：`pnpm test`
+  - Lint/格式化：`pnpm lint`、`pnpm format`
+  - 变更集：`pnpm changeset` → `pnpm version-packages`
+- 按包/应用（--filter）：
+  - Next 应用开发：`pnpm --filter web-guofeng dev`
+  - Umi 应用开发：`pnpm --filter @apps/admin-umi dev`
+  - 构建单应用：`pnpm --filter web-guofeng build`、`pnpm --filter @apps/admin-umi build`
+  - 组件库 Storybook：`pnpm --filter @packages/ui storybook`
+  - Next/ Umi Storybook：`pnpm --filter web-guofeng storybook`、`pnpm --filter @apps/admin-umi storybook`
+- 运行产物：
+  - Next：`pnpm --filter web-guofeng start`
+- 环境与工具：
+  - 切换 Node：`nvm use`（建议 Node 20–22）
+  - 安装依赖：`pnpm install`（必要时 `pnpm approve-builds`）
+- CI/发布（参考）：推送至 `main` 触发 release 流程（Changesets + npm registry）。
+- Darwin 常用工具：`git`、`ls`、`cd`、`rg`/`grep`、`find`、`sed -n`（阅读文件分段）、`open`（本地预览）。

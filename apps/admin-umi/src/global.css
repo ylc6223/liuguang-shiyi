@@ -1,0 +1,3 @@
+@import "tailwindcss";
+/* 引入 UI 包已编译好的成品样式 */
+@import "@packages/ui/ui.css";

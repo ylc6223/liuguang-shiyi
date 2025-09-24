@@ -1,0 +1,22 @@
+# Node & package managers
+node_modules/
+.pnpm-debug.log*
+*.log
+
+# Build outputs
+dist/
+build/
+.turbo/
+.next/
+storybook-static/
+coverage/
+
+# OS
+.DS_Store
+
+# Env
+.env*
+
+# Framework generated
+apps/**/.umi/
+

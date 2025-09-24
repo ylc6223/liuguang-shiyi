@@ -1,0 +1,7 @@
+/* 构建用样式入口：编译为 dist/ui.css 供外部应用直接引入 */
+@import "./styles.css";
+
+/* 扫描本包源码中的类名，生成所需 utilities/components */
+@source "./components/**/*.{ts,tsx}";
+@source "./lib/**/*.{ts,tsx}";
+

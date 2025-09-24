@@ -1,0 +1,22 @@
+# 风格与约定
+
+- 代码风格：
+  - 缩进 2 空格；单行不超过 100 字符；提交前运行 Prettier。
+  - ESLint：使用推荐规则；修复所有告警后再提交。
+  - TypeScript：严格模式，统一 TS 配置在 `packages/tsconfig`。
+- 命名约定：
+  - 变量/函数 `camelCase`，组件/类 `PascalCase`，常量 `SCREAMING_SNAKE_CASE`。
+  - 文件名使用 `kebab-case`，仅在确有必要时导出默认值。
+- 目录与体量约束（硬性）：
+  - JS/TS 文件尽量不超过 300 行；每层目录尽量不超过 8 个文件，必要时拆分子目录。
+- 枚举（硬性，极其重要）：
+  - 所有固定状态/类别/选项必须用 TypeScript 枚举定义，且枚举成员绑定为数字常量；禁止直接写裸字符串或数字。
+  - 函数/数据结构如涉及这些值，其类型必须使用该枚举类型，而不是 `number` 或 `string`。
+- 测试：
+  - 使用 Vitest/Jest；测试放在 `tests/`，与 `src/` 目录结构镜像，命名 `*.test.ts[x]`。
+  - 避免脆弱的 UI 快照；覆盖核心逻辑。
+- 设计系统：
+  - Tailwind v4 作为公共依赖；共享 preset 由 `@packages/tailwind-config` 提供。
+  - 组件库基于 shadcn/ui 与 Radix UI；Storybook 作为开发与文档工具。
+- 提交规范：Conventional Commits；示例：`feat(api): add pagination to list route`。
+- 代码坏味道关注：僵化、冗余、循环依赖、脆弱性、晦涩性、数据泥团、不必要的复杂性；发现后需及时提出优化建议。

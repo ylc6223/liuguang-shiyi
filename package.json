@@ -1,0 +1,25 @@
+{
+  "name": "liuguang-shiyi",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.15.0",
+  "engines": {
+    "node": ">=20 <=22"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm version-packages && echo 'Publish via CI or pnpm -r publish'"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.8",
+    "turbo": "^2.0.6",
+    "@tailwindcss/postcss": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}
