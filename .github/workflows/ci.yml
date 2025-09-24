@@ -24,6 +24,8 @@ jobs:
         run: pnpm approve-builds || true
       - name: Lint
         run: pnpm lint --no-color || true
+      - name: Build UI package (ui.css)
+        run: pnpm --filter @packages/ui build --no-color
       - name: Build
         run: pnpm build --no-color
       - name: Test
