@@ -1,7 +1,17 @@
-import { defineConfig } from '@umijs/max';
+import { defineConfig } from '@umijs/max'
 
 export default defineConfig({
   npmClient: 'pnpm',
-  // Switch Umi builder to Vite so ESM configs (e.g., PostCSS) are supported out of the box
-  vite: {}
-});
+  vite: {},
+  routes: [
+    { path: '/', redirect: '/dashboard' },
+    { path: '/login', component: './login' },
+    {
+      path: '/dashboard',
+      component: '../layouts/dashboard-layout',
+      routes: [
+        { index: true, component: './dashboard/index' },
+      ],
+    },
+  ],
+})

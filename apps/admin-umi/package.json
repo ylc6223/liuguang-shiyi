@@ -13,7 +13,11 @@
   },
   "dependencies": {
     "@umijs/max": "^4.2.0",
-    "@packages/ui": "workspace:*"
+    "@packages/ui": "workspace:*",
+    "lucide-react": "^0.544.0",
+    "react-hook-form": "^7.63.0",
+    "zod": "^4.1.11",
+    "@hookform/resolvers": "^5.2.2"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
