@@ -69,8 +69,17 @@
 - UI 规范以 Design Tokens 为源，自动生成 CSS 变量/TS 常量；Tailwind v4 作为公共依赖，`@packages/tailwind-config` 提供共享 preset。
 - Storybook 驱动组件开发；组件以原子/分子/复合层次组织；提供无障碍与响应式范式。
 - 组件变更通过 Changesets 触发发布，apps 升级依赖后验证。
- 
- ## 测试与质量
+
+## 前台首页设计（apps/web-guofeng）
+- 主页信息架构与交互已沉淀到文档：`docs/web-guofeng-homepage-design.md`
+- 当前板块顺序（可配置 `HomeSection/homeSectionOrder`）：
+  - Hero → 分类宫格 → 主打专题 → 编辑精选 → 历史长河 → 人物精选 → 最新文章/本周热门 → CTA → 订阅
+- 关键交互
+  - Hero CTA 改为“专题导览”（跳转 `/topics`），避免与紧随其后的分类宫格重复
+  - 历史长河下方提供“查看完整时间轴”（描边金色 + 悬浮填充，跳转 `/timeline`）
+  - 订阅按钮配色为金色强调（`#C6A477`）+ 白字
+
+## 测试与质量
  - 单元测试：Vitest/Jest + Testing Library；快照用于结构型组件，谨慎使用。
  - 端到端：Cypress/Playwright（按需求在 apps 中配置）。
  - 质量门禁：ESLint、TypeScript 严格模式、Prettier；CI 强制通过后可合并。
