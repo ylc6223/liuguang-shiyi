@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360">
+  <defs>
+    <style>
+      .box{fill:#f7f7f7;stroke:#9e9e9e;stroke-width:2;stroke-dasharray:6 6}
+      .label{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, Helvetica, sans-serif; font-size:14px; fill:#616161}
+      .title{font-size:16px; fill:#424242}
+    </style>
+  </defs>
+  <rect x="10" y="10" width="980" height="340" class="box"/>
+  <text x="24" y="40" class="title">模块：Hero（价值主张 + 搜索 + CTA）</text>
+  <rect x="40" y="80" width="720" height="48" class="box"/>
+  <text x="52" y="110" class="label">H1 标题（价值主张）</text>
+  <rect x="40" y="140" width="600" height="32" class="box"/>
+  <text x="52" y="162" class="label">H2 补充说明</text>
+  <rect x="40" y="190" width="560" height="44" class="box"/>
+  <text x="52" y="218" class="label">强搜索入口（带示例提示）</text>
+  <rect x="610" y="190" width="120" height="44" class="box"/>
+  <text x="630" y="218" class="label">搜索</text>
+  <rect x="740" y="190" width="120" height="44" class="box"/>
+  <text x="756" y="218" class="label">开始探索</text>
+</svg>
+

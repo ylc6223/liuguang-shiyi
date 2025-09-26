@@ -1,0 +1,29 @@
+{
+  "name": "@packages/effects-access",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "echo 'dev placeholder'",
+    "lint": "echo 'lint placeholder'",
+    "test": "echo 'test placeholder'",
+    "format": "echo 'format placeholder'"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
+

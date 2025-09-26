@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300">
+  <defs>
+    <style>
+      .box{fill:#f7f7f7;stroke:#9e9e9e;stroke-width:2;stroke-dasharray:6 6}
+      .label{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, Helvetica, sans-serif; font-size:12px; fill:#616161}
+      .title{font-size:14px; fill:#424242}
+    </style>
+  </defs>
+  <rect x="10" y="10" width="460" height="280" class="box"/>
+  <text x="20" y="36" class="title">模块：TopicCard（专题卡）</text>
+  <rect x="26" y="52" width="428" height="140" class="box"/>
+  <text x="36" y="126" class="label">封面图 16:9/4:3 自适应</text>
+  <rect x="26" y="202" width="280" height="26" class="box"/>
+  <text x="32" y="220" class="label">标题（≤ 24 字）</text>
+  <rect x="26" y="234" width="360" height="20" class="box"/>
+  <text x="32" y="248" class="label">摘要（≤ 40 字）</text>
+  <rect x="392" y="202" width="62" height="52" class="box"/>
+  <text x="398" y="232" class="label">元信息</text>
+</svg>
+

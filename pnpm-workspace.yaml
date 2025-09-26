@@ -1,6 +1,10 @@
 packages:
   - "apps/*"
+  - "!apps/vben-admin"
   - "packages/*"
+  - "packages/@core/*"
+  - "packages/@core/*/*"
+  - "packages/effects/*"
   - "!**/test/**"
   - "!**/fixtures/**"
   - "!**/temp/**"

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220">
+  <defs>
+    <style>
+      .box{fill:#f7f7f7;stroke:#9e9e9e;stroke-width:2;stroke-dasharray:6 6}
+      .line{stroke:#bdbdbd;stroke-width:2}
+      .label{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, Helvetica, sans-serif; font-size:12px; fill:#616161}
+      .title{font-size:14px; fill:#424242}
+    </style>
+  </defs>
+  <rect x="10" y="10" width="780" height="200" class="box"/>
+  <text x="20" y="36" class="title">模块：TimelinePreview（时间轴快览）</text>
+  <line x1="40" y1="120" x2="760" y2="120" class="line"/>
+  <circle cx="100" cy="120" r="18" fill="#f7f7f7" stroke="#9e9e9e" stroke-dasharray="6 6"/>
+  <circle cx="200" cy="120" r="18" fill="#f7f7f7" stroke="#9e9e9e" stroke-dasharray="6 6"/>
+  <circle cx="300" cy="120" r="18" fill="#f7f7f7" stroke="#9e9e9e" stroke-dasharray="6 6"/>
+  <circle cx="400" cy="120" r="18" fill="#f7f7f7" stroke="#9e9e9e" stroke-dasharray="6 6"/>
+  <circle cx="500" cy="120" r="18" fill="#f7f7f7" stroke="#9e9e9e" stroke-dasharray="6 6"/>
+  <circle cx="600" cy="120" r="18" fill="#f7f7f7" stroke="#9e9e9e" stroke-dasharray="6 6"/>
+  <circle cx="700" cy="120" r="18" fill="#f7f7f7" stroke="#9e9e9e" stroke-dasharray="6 6"/>
+</svg>
+

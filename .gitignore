@@ -19,3 +19,7 @@ coverage/
 
 # Framework generated
 apps/**/.umi*
+/.codex/
+/.serena/
+/.specify/
+/apps/vben-admin/

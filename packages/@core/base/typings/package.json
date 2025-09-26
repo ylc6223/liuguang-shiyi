@@ -1,0 +1,25 @@
+{
+  "name": "@packages/core-typings",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "echo 'dev placeholder'",
+    "lint": "echo 'lint placeholder'",
+    "test": "echo 'test placeholder'",
+    "format": "echo 'format placeholder'"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
+

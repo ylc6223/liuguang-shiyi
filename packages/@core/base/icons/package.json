@@ -1,0 +1,33 @@
+{
+  "name": "@packages/core-icons",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "echo 'dev placeholder'",
+    "lint": "echo 'lint placeholder'",
+    "test": "echo 'test placeholder'",
+    "format": "echo 'format placeholder'"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "dependencies": {
+    "@iconify/react": "^5.1.0"
+  },
+  "devDependencies": {
+    "@iconify/types": "^2.0.0",
+    "typescript": "^5.6.2"
+  }
+}
