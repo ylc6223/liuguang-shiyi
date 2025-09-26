@@ -13,13 +13,13 @@ export enum HomeSection {
 
 // 版式B（学习路径/时间线优先）
 export const homeSectionOrder: HomeSection[] = [
-  // 方案A（首屏不出现分类宫格）
+  // 调整：宫格放在 Hero 下方；历史长河放在 编辑精选 下方
   HomeSection.Hero,
-  HomeSection.HistoryRiver,
+  HomeSection.CategoryGrid,
   HomeSection.FeaturedTopics,
   HomeSection.EditorsPicks,
+  HomeSection.HistoryRiver,
   HomeSection.SelectedFigures,
-  HomeSection.CategoryGrid,
   HomeSection.ArticlesAndTrends,
   HomeSection.CtaJoin,
   HomeSection.Subscribe,
