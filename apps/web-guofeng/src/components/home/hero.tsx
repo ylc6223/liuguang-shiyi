@@ -33,11 +33,11 @@ export function Hero() {
         </div>
         <div className="mt-6 flex justify-center">
           <Link
-            href="#categories"
+            href="/topics"
             className="inline-flex items-center gap-2 rounded-full border border-primary px-5 py-2 text-sm text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
           >
-            按主题探索
-            <MaterialIcon name="south" className="text-base" />
+            专题导览
+            <MaterialIcon name="arrow_forward" className="text-base" />
           </Link>
         </div>
       </div>
