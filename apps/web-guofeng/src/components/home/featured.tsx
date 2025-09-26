@@ -130,7 +130,7 @@ export function Subscribe() {
           placeholder="输入您的邮箱订阅"
           className="w-full py-3 px-4 rounded-full bg-card border border-border focus:outline-none focus:ring-2 focus:ring-primary"
         />
-        <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-accent text-accent-foreground rounded-full px-6 py-2 text-sm">
+        <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-accent text-white rounded-full px-6 py-2 text-sm hover:opacity-90">
           订阅
         </button>
       </div>

@@ -21,6 +21,14 @@ export function HistoryRiver() {
           ))}
         </div>
       </div>
+      <div className="text-center mt-8">
+        <Link
+          href="/timeline"
+          className="inline-block text-accent border border-accent rounded-full px-6 py-2 text-sm hover:bg-accent hover:text-white transition-colors"
+        >
+          查看完整时间轴
+        </Link>
+      </div>
     </section>
   )
 }
