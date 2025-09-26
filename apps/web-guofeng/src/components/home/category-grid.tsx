@@ -12,7 +12,7 @@ export function CategoryGrid() {
     CategoryKey.Geography,
   ]
   return (
-    <section className="mb-20">
+    <section id="categories" className="mb-20">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
         {order.map((key) => (
           <Link
@@ -32,4 +32,3 @@ export function CategoryGrid() {
     </section>
   )
 }
-
